@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Develops Code — Softhouse</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  @media (max-width: 768px) {
+    .hero-content { padding: 0 20px 20px; }
+    .hero-badge { font-size: 0.75rem; padding: 7px 14px; }
+    .stat-bubble { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- SIDENAV (mobile) -->
+<header class="mobile-header">
+  <nav class="mobile-nav-wrap" aria-label="Mobile navigation">
+    <ul class="sidenav" id="mobile-nav">
+      <li class="sidenav-brand">
+        <img src="img/logo.png" alt="Develops Code logo" />
+        <div class="sidenav-brand-text">DEVELOPS<span class="sidenav-brand-code">CODE</span></div>
+      </li>
+      <li><a href="#servicos" class="sidenav-close">Serviços</a></li>
+      <li><a href="#processo" class="sidenav-close">Processo</a></li>
+      <li><a href="#portfolio" class="sidenav-close">CEO</a></li>
+      <li><a href="#sobre" class="sidenav-close">Sobre</a></li>
+      <li><a href="#faq" class="sidenav-close">FAQ</a></li>
+      <li class="sidenav-cta-item"><a href="#contato" class="sidenav-close sidenav-cta-btn">Falar com a equipe →</a></li>
+    </ul>
+    <div class="toggle-hint" id="toggle-hint" aria-live="polite">
+      <span class="toggle-hint-text">deslize o dedo</span>
+      <span class="toggle-hint-icon material-icons" aria-hidden="true">arrow_back</span>
+    </div>
+  </nav>
+</header>
+
+<!-- NAVBAR -->
+<nav id="main-nav">
+  <div class="nav-logo">
+    <img src="img/logo.png" alt="Develops Code logo" />
+    <div class="nav-logo-text">DEVELOPS<span class="nav-logo-code">CODE</span></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#processo">Processo</a></li>
+    <li><a href="#portfolio">CEO</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contato" class="nav-cta">Falar com a equipe →</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger-btn" data-target="mobile-nav" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="particles" id="particles"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      Softhouse — Construindo o futuro digital
+    </div>
+    <h1>
+      Engenharia Digital de Alto Impacto para <span class="highlight">Empresas que Escalam</span>.
+    </h1>
+    <p>Transformamos sua operação em um ativo digital de alta performance. Criamos ecossistemas robustos que eliminam gargalos, automatizam lucros e garantem previsibilidade total para o seu crescimento.</p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn-primary">
+        Agendar diagnóstico estratégico
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#portfolio" class="btn-secondary">
+        Ver expertise
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+      </a>
+    </div>
+    <div class="authority-bar reveal">
+      <span>✦ 50+ Sistemas de missão crítica</span>
+      <span class="sep">|</span>
+      <span>✦ Parceiro AWS Advanced</span>
+      <span class="sep">|</span>
+      <span>✦ ROI comprovado em B2B</span>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="stat-bubble stat-1">
+      <div class="num">+R$ 10M</div>
+      <div class="label">Eficiência gerada</div>
+    </div>
+    <div class="stat-bubble stat-2">
+      <div class="num">99.9%</div>
+      <div class="label">Disponibilidade</div>
+    </div>
+
+    <div class="dashboard-visual">
+      <div class="db-header">
+        <div class="db-title">Visão Geral de Performance</div>
+        <div class="db-status">
+          <div class="badge-dot"></div>
+          Sistemas Otimizados
+        </div>
+      </div>
+      <div class="db-content">
+        <div class="db-chart-row">
+          <div class="db-bar" style="height: 40%"></div>
+          <div class="db-bar" style="height: 65%"></div>
+          <div class="db-bar" style="height: 50%"></div>
+          <div class="db-bar" style="height: 85%"></div>
+          <div class="db-bar" style="height: 70%"></div>
+          <div class="db-bar" style="height: 95%"></div>
+        </div>
+        <div class="db-stats-grid">
+          <div class="db-stat-item">
+            <span class="db-stat-val">+42%</span>
+            <span class="db-stat-label">Eficiência Operacional</span>
+          </div>
+          <div class="db-stat-item">
+            <span class="db-stat-val">99.9%</span>
+            <span class="db-stat-label">Uptime Garantido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-bubble stat-3">
+      <div class="num">Elite</div>
+      <div class="label">Engenharia Consultiva</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="servicos">
+  <div class="reveal">
+    <div class="section-tag">Nossa Expertise</div>
+    <h2 class="section-title">Tecnologia focada em<br>resultados reais</h2>
+    <p class="section-subtitle">Ajudamos empresas a eliminarem processos lentos e manuais através de soluções digitais robustas e altamente lucrativas.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon">💎</div>
+      <h3>Ativos Digitais Customizados</h3>
+      <p>Desenvolvemos softwares exclusivos que se tornam propriedade intelectual da sua empresa, desenhados para otimizar seu modelo de lucro específico.</p>
+      <a href="#contato" class="service-link">Gerar valor real <span>→</span></a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">📉</div>
+      <h3>Eficiência e Redução de Custos</h3>
+      <p>Substituímos processos manuais lentos por fluxos automáticos inteligentes, reduzindo drasticamente custos operacionais e eliminando erros humanos.</p>
+      <a href="#contato" class="service-link">Otimizar margens <span>→</span></a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🛡️</div>
+      <h3>Governança e Continuidade</h3>
+      <p>Arquitetura de alta disponibilidade projetada para garantir que sua operação nunca pare, com segurança total e escalabilidade sob demanda.</p>
+      <a href="#contato" class="service-link">Garantir estabilidade <span>→</span></a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">🎯</div>
+      <h3>Experiência de Valor</h3>
+      <p>Interfaces intuitivas desenhadas para elevar o valor percebido pelo seu cliente final, aumentando a retenção e reduzindo custos de suporte.</p>
+      <a href="#contato" class="service-link">Reter clientes <span>→</span></a>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon">📊</div>
+      <h3>Inteligência de Dados e ROI</h3>
+      <p>Implementação de dashboards estratégicos e automação avançada para gerar insights que direcionam sua tomada de decisão com precisão.</p>
+      <a href="#contato" class="service-link">Maximizar ROI <span>→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="processo">
+  <div class="reveal">
+    <div class="section-tag">Como trabalhamos</div>
+    <h2 class="section-title">Do briefing<br>ao lançamento</h2>
+    <p class="section-subtitle">Um processo claro e transparente que garante a entrega do produto certo, no prazo e no orçamento.</p>
+  </div>
+
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <h4>Diagnóstico</h4>
+      <p>Analisamos seus processos atuais para identificar gargalos e oportunidades reais de lucro através da tecnologia.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <h4>Estratégia</h4>
+      <p>Desenhamos o roteiro tecnológico focado no seu ROI, definindo metas claras e cronogramas de entrega acelerada.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <h4>Execução</h4>
+      <p>Desenvolvimento focado em agilidade e qualidade técnica superior, com visibilidade total do progresso em tempo real.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <h4>Escalabilidade</h4>
+      <p>Lançamento seguro e suporte contínuo para garantir que a solução evolua conforme seu negócio cresce.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="sobre">
+  <div class="reveal">
+    <div class="section-tag">Tecnologias</div>
+    <h2 class="section-title">Stack moderno &<br>battle-tested</h2>
+    <p class="section-subtitle">Trabalhamos com as ferramentas mais sólidas do mercado para garantir produtos de alta qualidade e longevidade.</p>
+  </div>
+
+  <div class="value-infra-grid">
+    <div class="infra-card reveal">
+      <h4>Escalabilidade de Elite</h4>
+      <p>Sistemas em <strong>Python e Node.js</strong> preparados para suportar milhões de acessos sem perda de performance.</p>
+    </div>
+    <div class="infra-card reveal">
+      <h4>Segurança e Governança</h4>
+      <p>Infraestrutura em <strong>AWS e PostgreSQL</strong> com criptografia de ponta e redundância total de dados.</p>
+    </div>
+    <div class="infra-card reveal">
+      <h4>Conectividade Total</h4>
+      <p>Ecossistema integrado via <strong>APIs</strong>, garantindo que suas ferramentas trabalhem em perfeita sincronia.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP & SUCCESS CASES -->
+<section id="portfolio">
+  <div class="reveal">
+    <div class="section-tag">Liderança & Resultados</div>
+    <h2 class="section-title">Visão Estratégica,<br>Impacto Real</h2>
+    <p class="section-subtitle">A expertise do nosso fundador aplicada em projetos de alta complexidade e retorno financeiro.</p>
+  </div>
+
+  <div class="leadership-grid">
+    <div class="partner-card reveal">
+      <img src="img/socio-kaue.jpeg" alt="Foto do CEO Kauê" class="partner-photo" />
+      <div class="partner-info">
+        <span class="partner-role">CEO & Founder</span>
+        <h3>Kauê</h3>
+        <p>Especialista em arquitetura de sistemas escaláveis e liderança técnica, focado em transformar desafios complexos em soluções digitais de alta performance.</p>
+      </div>
+    </div>
+
+    <div class="cases-intro reveal">
+      <h3>Parcerias de Sucesso</h3>
+      <p>Selecionamos projetos onde a tecnologia foi o diferencial competitivo para o crescimento exponencial do negócio.</p>
+    </div>
+  </div>
+
+  <div class="success-cases-grid">
+    <div class="case-card reveal">
+      <div class="case-category">Fintech</div>
+      <h4>Expansão de Processamento</h4>
+      <p>Reestruturação de core bancário para suportar um aumento de 300% no volume de transações mensais.</p>
+      <div class="case-result">ROI: +25% de Margem Operacional</div>
+    </div>
+    <div class="case-card reveal">
+      <div class="case-category">E-commerce</div>
+      <h4>Logística Inteligente</h4>
+      <p>Implementação de sistema de roteirização em tempo real, reduzindo custos de entrega em 22%.</p>
+      <div class="case-result">Impacto: 0% Erro Humano</div>
+    </div>
+    <div class="case-card reveal">
+      <div class="case-category">SaaS B2B</div>
+      <h4>Escalabilidade Global</h4>
+      <p>Migração para arquitetura serverless multi-região, garantindo 99.99% de uptime para usuários globais.</p>
+      <div class="case-result">Result: Expansão para 12 países</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section>
+  <div class="reveal">
+    <div class="section-tag">Depoimentos</div>
+    <h2 class="section-title">O que nossos<br>clientes dizem</h2>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"A Develops Code entregou nosso MVP em tempo recorde, com uma qualidade técnica impressionante. A comunicação foi impecável durante todo o projeto."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar av-1">MR</div>
+        <div class="author-info">
+          <strong>Marcos Rocha</strong>
+          <span>CEO, TechStart</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Transformaram nossa ideia em um produto real e funcional. A equipe entende de negócios, não só de código. Recomendo demais!"</p>
+      <div class="testimonial-author">
+        <div class="author-avatar av-2">AF</div>
+        <div class="author-info">
+          <strong>Ana Ferreira</strong>
+          <span>Fundadora, HealthPlus</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="stars">★★★★★</div>
+      <p class="testimonial-text">"Nossa plataforma de e-commerce triplicou de performance depois da refatoração. Equipe extremamente competente e proativa."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar av-3">LS</div>
+        <div class="author-info">
+          <strong>Lucas Silva</strong>
+          <span>CTO, Loja Digital</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARATIVO -->
+<section id="comparativo">
+  <div class="reveal">
+    <div class="section-tag">Por que a Develops Code</div>
+    <h2 class="section-title">Nós não somos<br>uma agência.</h2>
+    <p class="section-subtitle">A diferença entre uma agência digital e uma softhouse parceira é enorme — e impacta diretamente o seu negócio.</p>
+  </div>
+
+  <div class="compare-table reveal">
+    <div class="compare-header">
+      <div class="compare-feature-col"></div>
+      <div class="compare-col compare-col-agency">
+        <span class="col-label">Agência Digital</span>
+      </div>
+      <div class="compare-col compare-col-us">
+        <span class="col-badge">✦ Develops Code</span>
+      </div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-feature">Entende o seu modelo de negócio</div>
+      <div class="compare-val agency"><span class="x">✗</span> Raramente</div>
+      <div class="compare-val us"><span class="check">✓</span> Sempre, desde o briefing</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-feature">Código é seu, sem lock-in</div>
+      <div class="compare-val agency"><span class="x">✗</span> Código proprietário</div>
+      <div class="compare-val us"><span class="check">✓</span> 100% do código é seu</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-feature">Devs sênior no projeto</div>
+      <div class="compare-val agency"><span class="x">✗</span> Júniors terceirizados</div>
+      <div class="compare-val us"><span class="check">✓</span> Time sênior dedicado</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-feature">Transparência no processo</div>
+      <div class="compare-val agency"><span class="x">✗</span> Caixa preta</div>
+      <div class="compare-val us"><span class="check">✓</span> Acesso total em tempo real</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-feature">Escalabilidade técnica</div>
+      <div class="compare-val agency"><span class="x">✗</span> Refatoração cara depois</div>
+      <div class="compare-val us"><span class="check">✓</span> Arquitetado pra crescer</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-feature">Suporte pós-entrega</div>
+      <div class="compare-val agency"><span class="x">✗</span> Novo contrato, novo custo</div>
+      <div class="compare-val us"><span class="check">✓</span> Parceria contínua</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-feature">Foco em resultado do cliente</div>
+      <div class="compare-val agency"><span class="x">✗</span> Foco em horas faturadas</div>
+      <div class="compare-val us"><span class="check">✓</span> Foco no seu sucesso</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="reveal">
+    <div class="section-tag">Dúvidas frequentes</div>
+    <h2 class="section-title">Respostas diretas<br>sem enrolação.</h2>
+    <p class="section-subtitle">Sabemos que contratar uma softhouse gera dúvidas. Aqui estão as respostas mais honestas que você vai encontrar.</p>
+  </div>
+
+  <div class="faq-grid reveal">
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span>Qual o investimento médio para um projeto?</span>
+        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a">
+        <p>Depende do escopo, mas projetos de MVP costumam partir de R$ 15k. Sistemas mais complexos ficam entre R$ 50k e R$ 200k+. Nossa filosofia é ser 100% transparente sobre custos antes de qualquer compromisso — você recebe um orçamento detalhado em até 48h após o briefing, sem surpresas no meio do caminho.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span>Qual o prazo para entregar um projeto?</span>
+        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a">
+        <p>MVPs bem escoplados saem em 4 a 8 semanas. Produtos completos levam de 3 a 6 meses. Trabalhamos em sprints quinzenais com entregas contínuas — você não espera meses para ver algo funcionando. Na primeira semana já há protótipo navegável.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span>Vocês assinam NDA e contrato?</span>
+        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a">
+        <p>Sempre. Assinamos NDA antes mesmo do primeiro briefing. O contrato é claro sobre propriedade de código (é 100% seu), entregas, prazos e garantias. Nada de letras miúdas — revisamos cada cláusula com você antes de assinar.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span>Tenho acesso ao código durante o desenvolvimento?</span>
+        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a">
+        <p>Sim, desde o primeiro commit. Você recebe acesso ao repositório no GitHub ou GitLab, com visibilidade total do histórico. Sem caixas pretas: você pode auditar o código, apresentar para investidores ou fazer onboarding de um dev interno quando quiser.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span>O que acontece depois da entrega?</span>
+        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a">
+        <p>Todo projeto inclui 30 dias de suporte pós-lançamento sem custo adicional. Depois disso, oferecemos planos de manutenção e evolução mensal. Muitos clientes ficam com a gente por anos — somos o time técnico deles, só que sem os encargos de CLT.</p>
+      </div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        <span>Trabalham com clientes fora do Brasil?</span>
+        <svg class="faq-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="faq-a">
+        <p>Sim. Temos experiência em projetos internacionais com faturamento em dólar e euro. Nossa equipe tem fluência em inglês e o processo é totalmente adaptado para clientes fora do Brasil — desde contratos em inglês até reuniões no fuso horário do cliente.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contato">
+  <div class="cta-inner reveal">
+    <div class="cta-tag">
+      <div class="badge-dot"></div>
+      Vagas abertas para Q2 2025
+    </div>
+    <h2>Pronto para destravar o<br>crescimento do seu negócio?</h2>
+    <p>Agende uma reunião de diagnóstico com nossos consultores. Retornaremos em até 24h com uma análise estratégica inicial.</p>
+    <div class="contact-form-container">
+      <form id="contact-form">
+        <div class="input-row">
+          <input type="text" name="name" required placeholder="Seu Nome">
+          <input type="email" name="email" required placeholder="Seu E-mail">
+        </div>
+        <div class="input-row">
+          <input type="text" name="whatsapp" placeholder="WhatsApp (Opcional)">
+          <input type="text" name="company" placeholder="Empresa (Opcional)">
+        </div>
+        <textarea name="message" required placeholder="Como podemos ajudar?" rows="4"></textarea>
+        <div class="cta-buttons">
+          <button type="submit" class="btn-glow" id="submit-btn" style="border: none; cursor: pointer;">
+            Enviar Mensagem
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+          <a href="https://wa.me/5587981579604" class="btn-outline">
+            WhatsApp
+          </a>
+        </div>
+        <div id="form-status" class="form-status"></div>
+      </form>
+    </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="logo-text">Develops <span>Code</span></div>
+    <p class="footer-desc">Softhouse especializada em desenvolvimento de produtos digitais. Transformamos ideias em software de qualidade.</p>
+  </div>
+  <div class="footer-col">
+    <h5>Serviços</h5>
+    <ul>
+      <li><a href="#">Desenvolvimento Web</a></li>
+      <li><a href="#">Apps Mobile</a></li>
+      <li><a href="#">APIs & Backend</a></li>
+      <li><a href="#">Cloud & DevOps</a></li>
+      <li><a href="#">UI/UX Design</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h5>Empresa</h5>
+    <ul>
+      <li><a href="#portfolio">CEO</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Carreiras</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h5>Contato</h5>
+    <ul>
+      <li><a href="mailto:contato@developscode.com.br">contato@developscode.com.br</a></li>
+      <li><a href="#">+55 (87) 9 8157-9604</a></li>
+      <li><a href="#">linkedin.com/company/...</a></li>
+      <li><a href="#">github.com/developscode</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Develops Code. Todos os direitos reservados. - CNPJ: <span style="color: var(--cyan);">61.817.679/0001-09</span></p>
+    <div class="social-links">
+      <a href="#" class="social-link">in</a>
+      <a href="#" class="social-link">gh</a>
+      <a href="#" class="social-link">ig</a>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
