@@ -68,15 +68,17 @@ const NavigationModule = (() => {
   };
 
   const handleSidenavOpen = (elements) => {
-    const { hamburgerBtn, mainNav } = elements;
+    const { hamburgerBtn, mainNav, mobileNavEl } = elements;
     hamburgerBtn.classList.add('open');
+    mobileNavEl.classList.add('open');
     mainNav.classList.add('nav-hidden');
     showToggleHint(elements.toggleHint);
   };
 
   const handleSidenavClose = (elements) => {
-    const { hamburgerBtn, mainNav } = elements;
+    const { hamburgerBtn, mainNav, mobileNavEl } = elements;
     hamburgerBtn.classList.remove('open');
+    mobileNavEl.classList.remove('open');
     mainNav.classList.remove('nav-hidden');
     hideToggleHint(elements.toggleHint);
   };
@@ -243,3 +245,5 @@ document.addEventListener('DOMContentLoaded', () => {
   ParticlesModule.init();
   FormModule.init();
 });
+
+// Redeploy trigger: 2026-05-06T20:10:00-03:00
