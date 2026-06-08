@@ -438,8 +438,8 @@ nav .nav-links li a.nav-cta:focus,
 .hero h1 {
   font-family: 'Syne', sans-serif;
   font-weight: 800;
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  line-height: 1.0;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1.05;
   letter-spacing: -0.03em;
   color: var(--text-dark);
   margin-bottom: 28px;
@@ -683,6 +683,12 @@ section {
   position: relative;
   z-index: 1;
   padding: 120px 60px;
+}
+
+/* Reduced padding for compact sections */
+#sobre,
+section#faq {
+  padding: 80px 60px;
 }
 
 .section-tag {
@@ -1698,6 +1704,18 @@ footer {
 }
 .status-success { color: #a8ff9e; }
 .status-error { color: #ff5f57; }
+
+/* Custom scrollbar for textarea */
+.cta-section textarea::-webkit-scrollbar {
+  width: 6px;
+}
+.cta-section textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cta-section textarea::-webkit-scrollbar-thumb {
+  background: rgba(77, 217, 232, 0.4);
+  border-radius: 3px;
+}
 
 @media (max-width: 640px) {
   .input-row { flex-direction: column; gap: 0; }
